@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomCheckBox">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Checkbox Demo"
+        android:textSize="27dp"
+        android:id="@+id/t1"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textColor="#E1FF5722">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="select the subjects of Bca sem4 ."
+        android:textSize="20dp"
+        android:id="@+id/t2"
+        android:layout_below="@id/t1"
+        android:textColor="@color/black">
+    </TextView>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t2"
+        android:id="@+id/cb1"
+        android:layout_centerHorizontal="true"
+        android:text="Android App Dev"
+        android:textSize="17dp">
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb1"
+        android:id="@+id/cb2"
+        android:button="@drawable/cbdemo1"
+        android:layout_centerHorizontal="true"
+        android:text=".Net Programming"
+        android:textSize="17dp">
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb2"
+        android:id="@+id/cb3"
+        android:button="@drawable/cbdemo2"
+        android:layout_centerHorizontal="true"
+        android:text="Java Programming"
+        android:textSize="17dp">
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb3"
+        android:id="@+id/cb4"
+        android:button="@drawable/cbdemo3"
+        android:layout_centerHorizontal="true"
+        android:text="flutter Development"
+        android:textSize="17dp">
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb4"
+        android:id="@+id/cb5"
+        android:button="@drawable/cbdemo4"
+        android:layout_centerHorizontal="true"
+        android:text="Information System"
+        android:textSize="17dp">
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb5"
+        android:id="@+id/cb6"
+        android:layout_centerHorizontal="true"
+        android:text="Opps++"
+        android:textSize="17dp">
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb6"
+        android:id="@+id/cb7"
+        android:button="@drawable/cbdemo5"
+        android:layout_centerHorizontal="true"
+        android:text="Internet of things"
+        android:textSize="17dp">
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb7"
+        android:id="@+id/cb8"
+        android:layout_centerHorizontal="true"
+        android:text="Rdbms"
+        android:textSize="17dp">
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb8"
+        android:id="@+id/cb9"
+        android:layout_centerHorizontal="true"
+        android:text="Statistics"
+        android:textSize="17dp">
+    </CheckBox>
+</RelativeLayout>
