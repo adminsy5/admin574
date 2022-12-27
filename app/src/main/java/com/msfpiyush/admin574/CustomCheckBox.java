@@ -8,7 +8,7 @@ import android.widget.CheckBox;
 import android.widget.Toast;
 
 public class CustomCheckBox extends AppCompatActivity implements View.OnClickListener {
-    CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7, cb8, cb9;
+    CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +28,6 @@ public class CustomCheckBox extends AppCompatActivity implements View.OnClickLis
         cb6.setOnClickListener(this);
         cb7 = findViewById(R.id.cb7);
         cb7.setOnClickListener(this);
-        cb8 = findViewById(R.id.cb8);
-        cb8.setOnClickListener(this);
-        cb9 = findViewById(R.id.cb9);
-        cb9.setOnClickListener(this);
     }
 
     @Override
@@ -64,14 +60,6 @@ public class CustomCheckBox extends AppCompatActivity implements View.OnClickLis
             case R.id.cb7:
                 if(cb7.isChecked())
                     Toast.makeText(getApplicationContext(), "Internet of Things", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.cb8:
-                if(cb8.isChecked())
-                    Toast.makeText(getApplicationContext(), "Rdbms", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.cb9:
-                if(cb9.isChecked())
-                    Toast.makeText(getApplicationContext(),"Statistics",Toast.LENGTH_SHORT).show();
                 break;
         }
     }
