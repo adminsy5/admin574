@@ -1,4 +1,3 @@
-//This is Custom checkbox for android app with Toast Message
 package com.msfpiyush.admin574;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +8,6 @@ import android.widget.Toast;
 
 public class CustomCheckBox extends AppCompatActivity implements View.OnClickListener {
     CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
