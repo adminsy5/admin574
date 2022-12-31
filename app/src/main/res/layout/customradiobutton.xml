@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomRadioButton">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom radio button demo "
+        android:textSize="28dp"
+        android:id="@+id/t1"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:padding="20dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check the Gender !"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:id="@+id/t2"
+        android:layout_below="@+id/t1"
+        android:textColor="@color/purple_200">
+    </TextView>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t2">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/rdb1"
+            android:button="@drawable/rdb"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:textSize="20dp">
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/rdb2"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:button="@drawable/rdb2"
+            android:textSize="20dp">
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shemale"
+            android:id="@+id/rdb3"
+            android:button="@drawable/rdb1"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:textSize="20dp">
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None of these"
+            android:id="@+id/rdb4"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:textSize="20dp">
+        </RadioButton>
+
+    </RadioGroup>
+
+</RelativeLayout>
