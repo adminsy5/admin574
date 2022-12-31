@@ -104,4 +104,15 @@
         android:textSize="17dp">
     </CheckBox>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="17dp"
+        android:id="@+id/homecb"
+        android:backgroundTint="#000000"
+        android:textColor="#FCFFFFFF"
+        android:layout_below="@id/cb7"
+        android:layout_centerHorizontal="true">
+    </Button>
 </RelativeLayout>

@@ -2,12 +2,15 @@ package com.msfpiyush.admin574;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
+import android.content.Intent;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
 public class CustomCheckBox extends AppCompatActivity implements View.OnClickListener {
     CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7;
+    Button homecb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +29,11 @@ public class CustomCheckBox extends AppCompatActivity implements View.OnClickLis
         cb6.setOnClickListener(this);
         cb7 = findViewById(R.id.cb7);
         cb7.setOnClickListener(this);
+        homecb=findViewById(R.id.homecb);
+        homecb.setOnClickListener(view -> {
+            Intent CustomCheckbox = new Intent(CustomCheckBox.this,MainActivity.class);
+            startActivity(CustomCheckbox);
+        });
     }
 
     @Override

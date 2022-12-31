@@ -31,6 +31,7 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/rgb"
         android:layout_below="@id/t2">
 
         <RadioButton
@@ -77,5 +78,16 @@
         </RadioButton>
 
     </RadioGroup>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="17dp"
+        android:id="@+id/homerdb"
+        android:onClick="onClick"
+        android:backgroundTint="#000000"
+        android:textColor="#FCFFFFFF"
+        android:layout_below="@id/rgb"
+        android:layout_centerHorizontal="true">
+    </Button>
 </RelativeLayout>

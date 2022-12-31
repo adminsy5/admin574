@@ -3,13 +3,14 @@ package com.msfpiyush.admin574;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.content.Intent;
 import android.widget.RadioButton;
-import android.widget.Switch;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class CustomRadioButton extends AppCompatActivity implements View.OnClickListener {
     RadioButton rdb1,rdb2,rdb3,rdb4;
-
+    Button homerdb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,12 @@ public class CustomRadioButton extends AppCompatActivity implements View.OnClick
         rdb3.setOnClickListener(this);
         rdb4=findViewById(R.id.rdb4);
         rdb4.setOnClickListener(this);
+        homerdb=findViewById(R.id.homerdb);
+        homerdb.setOnClickListener(view ->
+        {
+            Intent rdbback = new Intent(CustomRadioButton.this,MainActivity.class);
+            startActivity(rdbback);
+        });
     }
     @Override
     public void onClick(View view)
