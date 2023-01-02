@@ -41,5 +41,17 @@
         android:backgroundTint="#00B6FF"
         android:textColor="#FFFCFD">
     </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b2"
+        android:id="@+id/b3"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:text="Spinner Demo"
+        android:textSize="16dp"
+        android:backgroundTint="#F407E9"
+        android:textColor="#000000">
+    </Button>
 
 </RelativeLayout>

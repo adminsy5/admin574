@@ -42,4 +42,15 @@
         android:layout_toRightOf="@id/CityOption">
     </Spinner>
 </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:onClick="onClick"
+        android:textSize="17dp"
+        android:id="@+id/homesb"
+        android:backgroundTint="#000000"
+        android:textColor="#FCFFFFFF"
+        android:layout_centerInParent="true">
+    </Button>
 </RelativeLayout>
