@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExplicitIntent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explicit Intent Demo"
+        android:textSize="28dp"
+        android:textColor="@color/purple_200"
+        android:textAlignment="center"
+        android:id="@+id/Heading"
+        android:padding="12dp">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl1"
+        android:layout_below="@id/Heading">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="Student Name : "
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:id="@+id/Name"
+            android:textColor="@color/black">
+        </TextView>
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="38dp"
+            android:id="@+id/EditName"
+            android:layout_toRightOf="@id/Name">
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl2"
+        android:layout_below="@id/rl1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="College : "
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:id="@+id/College"
+            android:textColor="@color/black">
+        </TextView>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="38dp"
+            android:id="@+id/EditCollege"
+            android:layout_toRightOf="@id/College">
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl3"
+        android:layout_below="@id/rl2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="Course : "
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:id="@+id/Course"
+            android:textColor="@color/black">
+        </TextView>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="38dp"
+            android:id="@+id/EditCourse"
+            android:layout_toRightOf="@id/Course">
+        </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:id="@+id/finish"
+        android:textColor="@color/black"
+        android:backgroundTint="#CABDBD"
+        android:textAlignment="center"
+        android:layout_below="@id/rl3"
+        android:layout_centerInParent="true">
+    </Button>
+</RelativeLayout>

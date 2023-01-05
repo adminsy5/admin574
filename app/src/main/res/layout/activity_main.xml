@@ -65,5 +65,17 @@
         android:backgroundTint="#FA4B82"
         android:textColor="#F4E5E5">
     </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b4"
+        android:id="@+id/b5"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:text="Explicit Intent"
+        android:textSize="16dp"
+        android:backgroundTint="#CA95A6"
+        android:textColor="#151010">
+    </Button>
 
 </RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowExplicitData">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Note : This is Second Activity to View explicit Data !"
+        android:textSize="22dp"
+        android:textColor="#FF0000"
+        android:padding="8dp"
+        android:id="@+id/Info">
+    </TextView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlx"
+    android:layout_below="@id/Info">
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:text=" Name : "
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingLeft="18dp"
+        android:id="@+id/setData1">
+    </TextView>
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/setData1"
+        android:id="@+id/getName">
+    </TextView>
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:text=" College : "
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/setData2"
+        android:paddingLeft="18dp"
+        android:layout_below="@id/setData1">
+    </TextView>
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/setData2"
+        android:id="@+id/getCollege"
+        android:layout_below="@id/getName">
+    </TextView>
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:text=" Course : "
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/setData3"
+        android:paddingLeft="18dp"
+        android:layout_below="@id/setData2">
+    </TextView>
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/setData3"
+        android:id="@+id/getCourse"
+        android:layout_below="@id/getCollege">
+    </TextView>
+</RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="17dp"
+        android:id="@+id/HomeEx"
+        android:backgroundTint="#000000"
+        android:textColor="#FCFFFFFF"
+        android:layout_below="@id/rlx"
+        android:layout_centerHorizontal="true">
+    </Button>
+</RelativeLayout>
