@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImplicitIntent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Implicit Intent"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:padding="22dp"
+        android:id="@+id/header"
+        android:textColor="@color/black">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the website !"
+        android:textSize="22dp"
+        android:textAlignment="center"
+        android:padding="12dp"
+        android:layout_below="@id/header"
+        android:paddingLeft="10dp"
+        android:id="@+id/Address"
+        android:textColor="@color/black">
+    </TextView>
+
+    <EditText
+        android:layout_width="380sp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/Address"
+        android:id="@+id/AddText">
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goto Site ❤"
+        android:backgroundTint="#3EBABF"
+        android:layout_below="@id/AddText"
+        android:id="@+id/UrlButton"
+        android:onClick="onClick"
+        android:layout_centerInParent="true">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="17dp"
+        android:id="@+id/Homeib"
+        android:backgroundTint="#000000"
+        android:textColor="#FCFFFFFF"
+        android:layout_below="@id/UrlButton"
+        android:layout_centerHorizontal="true">
+    </Button>
+</RelativeLayout>

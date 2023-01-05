@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-Button b1,b2,b3;
+Button b1,b2,b3,b4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +38,14 @@ Button b1,b2,b3;
                 Intent OpenSpinnerDemo = new Intent(MainActivity.this,SpinnerDemo.class);
                 Toast.makeText(MainActivity.this, "Hurray !😁", Toast.LENGTH_SHORT).show();
                 startActivity(OpenSpinnerDemo);
+            }
+        });
+        b4=findViewById(R.id.b4);
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent OpenImplicitIntent = new Intent(MainActivity.this,ImplicitIntent.class);
+                startActivity(OpenImplicitIntent);
             }
         });
     }
