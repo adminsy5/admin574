@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">admin574</string>
+    <string name="mess">are you sure to choose this !</string>
+    <string name="title">Warning ⚠️</string>
 </resources>
