@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-Button b1,b2,b3,b4,b5;
+Button b1,b2,b3,b4,b5,b6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +55,15 @@ Button b1,b2,b3,b4,b5;
             public void onClick(View view) {
                 Intent OpenExplicitIntent = new Intent(MainActivity.this,ExplicitIntent.class);
                 startActivity(OpenExplicitIntent);
+            }
+        });
+
+        b6=findViewById(R.id.b6);
+        b6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent CustomListView=new Intent(MainActivity.this,SimpleListViewDemo.class);
+                startActivity(CustomListView);
             }
         });
     }
