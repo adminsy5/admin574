@@ -89,5 +89,17 @@
         android:backgroundTint="#FFE8EF"
         android:textColor="#4FC5BB">
     </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b6"
+        android:id="@+id/b7"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:text="Processor ListView"
+        android:textSize="16dp"
+        android:backgroundTint="#39F12C"
+        android:textColor="#A43DEC">
+    </Button>
 
 </RelativeLayout>

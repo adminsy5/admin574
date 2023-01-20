@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -44,6 +43,7 @@ AlertDialog.Builder adb;
 //                SimpleListView.setOnClickListener(new View.OnClickListener() {
 //                    @Override
 //                    public void onClick(View view) {
+                //----------------------------------------------------------------
                 adb.setMessage("You are choosing "+OsBuild[i]+" ! ");
                 adb.setTitle(" Note ");
                 adb.setCancelable(false);
@@ -59,8 +59,12 @@ AlertDialog.Builder adb;
                         finish();
                     }
                 });
+                //-----------------------------------------------------------------------
+
                 AlertDialog AlertDialogObject=adb.create();
                 AlertDialogObject.show();
+
+
                         LayoutInflater inflater = getLayoutInflater();
                         View layout= inflater.inflate(R.layout.custom_toast,(ViewGroup) findViewById(R.id.LinearLayoutRoot));
                         TextView CustomText=layout.findViewById(R.id.CustomText);
@@ -85,6 +89,6 @@ AlertDialog.Builder adb;
         }
         return super.onOptionsItemSelected(item);
     }
-    //        });
+//            });
 //    }
 }
