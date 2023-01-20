@@ -9,22 +9,23 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ProcessorListViewAdapter extends BaseAdapter {
-    Context context;
-    String OsBuild[];
-    int OsIcon[];
+    Context contex;
+    String ArrayProcessorName[];
+    String ArrayProcessorPrice[];
+    int ArrayProcessorImg[];
     LayoutInflater inflater;
 
-    public ProcessorListViewAdapter(Context applicationContext,String[] OsBuild,int[] OsIcon)
-    {
-        this.context=context;
-        this.OsBuild=OsBuild;
-        this.OsIcon=OsIcon;
+    public ProcessorListViewAdapter(Context applicationContext, String[] ArrayProcessorName, String[] ArrayProcessorPrice, int[] ArrayProcessorImg) {
+        this.contex = contex;
+        this.ArrayProcessorName = ArrayProcessorName;
+        this.ArrayProcessorPrice = ArrayProcessorPrice;
+        this.ArrayProcessorImg = ArrayProcessorImg;
         inflater=(LayoutInflater.from(applicationContext));
     }
 
     @Override
     public int getCount() {
-        return OsBuild.length;
+        return ArrayProcessorName.length;
     }
 
     @Override
@@ -39,11 +40,13 @@ public class ProcessorListViewAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        view=inflater.inflate(R.layout.activity_listview,null);
-        TextView Builds=(TextView) view.findViewById(R.id.BuildText);
-        ImageView Icons=(ImageView) view.findViewById(R.id.icon);
-        Builds.setText(OsBuild[i]);
-        Icons.setImageResource(OsIcon[i]);
+        view=inflater.inflate(R.layout.processorlistviewdemo,null);
+        TextView ProcessorName1=(TextView) view.findViewById(R.id.ProcessorName);
+        TextView ProcessorPrice1=(TextView) view.findViewById(R.id.ProcessorPrice);
+        ImageView ProcessorImg1=(ImageView) view.findViewById(R.id.ProcessorImg);
+        ProcessorName1.setText(ArrayProcessorName[i]);
+        ProcessorPrice1.setText(ArrayProcessorPrice[i]);
+        ProcessorImg1.setImageResource(ArrayProcessorImg[i]);
         return view;
     }
 }

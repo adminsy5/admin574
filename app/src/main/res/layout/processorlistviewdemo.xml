@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
     <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:id="@+id/icon"
-        android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher">
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/ProcessorImg">
     </ImageView>
 
-    <TextView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="28dp"
-        android:padding="8dp"
-        android:layout_gravity="center"
-        android:id="@+id/BuildText"
-        android:textColor="@color/black">
-    </TextView>
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ProcessorName"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/ProcessorName">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ProcessorPrice"
+            android:id="@+id/ProcessorPrice"
+            android:textColor="@color/purple_500"
+            android:textSize="19dp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
 
 </LinearLayout>
