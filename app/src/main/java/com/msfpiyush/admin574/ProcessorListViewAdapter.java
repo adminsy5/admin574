@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class ProcessorListViewAdapter extends BaseAdapter {
     Context contex;
     String ArrayProcessorName[];
@@ -43,7 +45,7 @@ public class ProcessorListViewAdapter extends BaseAdapter {
         view=inflater.inflate(R.layout.processorlistviewdemo,null);
         TextView ProcessorName1=(TextView) view.findViewById(R.id.ProcessorName);
         TextView ProcessorPrice1=(TextView) view.findViewById(R.id.ProcessorPrice);
-        ImageView ProcessorImg1=(ImageView) view.findViewById(R.id.ProcessorImg);
+        CircleImageView ProcessorImg1=(CircleImageView) view.findViewById(R.id.ProcessorImg);
         ProcessorName1.setText(ArrayProcessorName[i]);
         ProcessorPrice1.setText(ArrayProcessorPrice[i]);
         ProcessorImg1.setImageResource(ArrayProcessorImg[i]);

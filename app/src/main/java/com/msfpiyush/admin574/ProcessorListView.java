@@ -1,8 +1,12 @@
 package com.msfpiyush.admin574;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ListView;
+import android.widget.Switch;
 
 
 public class ProcessorListView extends AppCompatActivity {
@@ -20,5 +24,19 @@ public class ProcessorListView extends AppCompatActivity {
         ProcessorListViewAdapter CustomAdapter=new ProcessorListViewAdapter(getApplicationContext(),ArrayProcessorName,ArrayProcessorPrice,ArrayProcessorImg);
         ProcessorListViewDemo.setAdapter(CustomAdapter);
 
+        ActionBar actionBar=getSupportActionBar();
+        actionBar.setHomeAsUpIndicator(R.drawable.backbutton32k);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId())
+        {
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return onOptionsItemSelected(item);
     }
 }
