@@ -102,4 +102,17 @@
         android:textColor="#A43DEC">
     </Button>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b7"
+        android:id="@+id/b8"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:text=" CalendarView "
+        android:textSize="16dp"
+        android:backgroundTint="#E687F6"
+        android:textColor="#EFEFEF">
+    </Button>
+
 </RelativeLayout>

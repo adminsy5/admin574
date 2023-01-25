@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.text.ParseException;
@@ -16,15 +17,17 @@ import java.util.Date;
 
 public class CalendarViewDemo extends AppCompatActivity {
 CalendarView calendarView1;
+EditText newDateGet;
 Button btnClick;
 AlertDialog.Builder adb ;
-
+int y,m,d;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calendarviewdemo);
         btnClick=findViewById(R.id.btnClick);
+        newDateGet=findViewById(R.id.newDateGet);
         calendarView1=findViewById(R.id.calendarView1);
         adb=new AlertDialog.Builder(this);
 
@@ -34,7 +37,8 @@ AlertDialog.Builder adb ;
 
                 SimpleDateFormat sdf=new SimpleDateFormat("DD/MM/YYYY");
                 String currentDate=sdf.format(new Date());      //Get Currnt date
-                String newDate="26/07/2023";
+//                String newDate="22/02/2023";
+//                String newDate=str.toString();
                         if(currentDate.compareTo(newDate) > -1)
                         {
                             adb.setMessage("You choose old date !")
