@@ -10,7 +10,7 @@
         android:id="@+id/TextHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calender View Demo"
+        android:text="DatePicker Demo 1"
         android:fontFamily="@font/exo_2"
         android:gravity="center"
         android:padding="8dp"
@@ -19,17 +19,17 @@
         android:textStyle="bold">
     </TextView>
 
-    <CalendarView
-        android:id="@+id/calendarView1"
-        android:layout_below="@id/TextHeader"
+    <DatePicker
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </CalendarView>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextHeader"
+        android:id="@+id/DatePickerDemo1">
+    </DatePicker>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/calendarView1">
+        android:layout_below="@id/DatePickerDemo1">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
