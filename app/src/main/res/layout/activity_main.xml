@@ -109,10 +109,23 @@
         android:id="@+id/b8"
         android:onClick="onClick"
         android:layout_centerHorizontal="true"
-        android:text=" CalendarView "
+        android:text=" Date-PickerDemo "
         android:textSize="16dp"
         android:backgroundTint="#E687F6"
         android:textColor="#EFEFEF">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b8"
+        android:id="@+id/b9"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:text="Time-PickerDemo "
+        android:textSize="16dp"
+        android:backgroundTint="#190C1B"
+        android:textColor="#DF8989">
     </Button>
 
 </RelativeLayout>
