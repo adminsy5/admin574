@@ -9,18 +9,18 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Date Picker Demo"
+        android:text="Time Picker Demo"
         android:padding="12dp"
         android:textSize="22sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:gravity="center"
-        android:id="@+id/DatePickerDemo1">
+        android:id="@+id/TimePickerDemo1">
     </TextView>
 
-    <DatePicker
+    <TimePicker
         android:layout_width="wrap_content"
-        android:layout_below="@id/DatePickerDemo1"
+        android:layout_below="@id/TimePickerDemo1"
         android:layout_height="wrap_content">
-    </DatePicker>
+    </TimePicker>
 </RelativeLayout>
