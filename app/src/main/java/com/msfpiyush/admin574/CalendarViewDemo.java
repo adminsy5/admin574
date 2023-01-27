@@ -77,25 +77,25 @@ AlertDialog.Builder adb ;
         btnClick=findViewById(R.id.btnClick);
         newDateGet=findViewById(R.id.newDateGet);
 
-        newDateGet.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                Calendar c= Calendar.getInstance();
-                int year=c.get(Calendar.YEAR);
-                int month=c.get(Calendar.MONTH);
-                int day=c.get(Calendar.DAY_OF_MONTH);
-
-                DatePickerDialog datePickerDialog=new DatePickerDialog(CalendarViewDemo.this, new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker datePicker, int y, int m, int d) {
-                        newDateGet.setText(d+"/"+m+1+"/"+y);
-                    }
-                },
-                        day,month,year);
-                datePickerDialog.show();
-                return true;
-            }
-        });
+//        newDateGet.setOnLongClickListener(new View.OnLongClickListener() {
+//            @Override
+//            public boolean onLongClick(View view) {
+//                Calendar c= Calendar.getInstance();
+//                int year=c.get(Calendar.YEAR);
+//                int month=c.get(Calendar.MONTH);
+//                int day=c.get(Calendar.DAY_OF_MONTH);
+//
+//                DatePickerDialog datePickerDialog=new DatePickerDialog(CalendarViewDemo.this, new DatePickerDialog.OnDateSetListener() {
+//                    @Override
+//                    public void onDateSet(DatePicker datePicker, int y, int m, int d) {
+//                        newDateGet.setText(d+"/"+m+1+"/"+y);
+//                    }
+//                },
+//                        day,month,year);
+//                datePickerDialog.show();
+//                return true;
+//            }
+//        });
 //        newDateGet.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -123,8 +123,8 @@ AlertDialog.Builder adb ;
                     StringBuilder sb=new StringBuilder();
                     sb.append(str)
                             .append(day+"/"+month+1+"/"+year);
-                    Toast.makeText(CalendarViewDemo.this, sb.toString(), Toast.LENGTH_SHORT).show();
-//                    newDateGet.setText(day+"/"+month+"/"+year);
+//                    Toast.makeText(CalendarViewDemo.this, sb.toString(), Toast.LENGTH_SHORT).show();
+                    newDateGet.setText(day+"/"+month+1+"/"+year);
                 }
             });
         }
@@ -158,9 +158,9 @@ AlertDialog.Builder adb ;
 //                {
 //                    Toast.makeText(CalendarViewDemo.this, "date2", Toast.LENGTH_SHORT).show();
 //                }
-                newDateGet.setText(NewDate);
+//                newDateGet.setText(NewDate);
 
-                if(CurrentDate.compareTo(NewDate) > 1) {
+                if(NewDate.compareTo(CurrentDate) > -1) {
                     Toast.makeText(CalendarViewDemo.this, "New date", Toast.LENGTH_SHORT).show();
                 }
                 else

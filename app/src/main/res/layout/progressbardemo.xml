@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrpgressBarDemo">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress bar Demo"
+        android:padding="12dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/TextPb1">
+    </TextView>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_below="@id/TextPb1"
+        android:id="@+id/ProgressBarCir">
+    </ProgressBar>
+
+    <ProgressBar
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@id/ProgressBarCir"
+        android:id="@+id/ProgressBarLine"
+        android:max="10000"
+        android:progress="1"
+        android:layout_centerInParent="true">
+    </ProgressBar>
+
+    <ProgressBar
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custpbg1"
+        android:max="100"
+        android:progress="1"
+        android:id="@+id/pbg2"
+        android:layout_centerInParent="true">
+    </ProgressBar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextPbg"
+        android:text="Demo"
+        android:layout_below="@id/ProgressBarLine"
+        android:layout_centerInParent="true">
+    </TextView>
+
+</RelativeLayout>

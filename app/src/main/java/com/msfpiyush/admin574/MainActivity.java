@@ -6,11 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
+Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,6 +90,15 @@ Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
             @Override
             public void onClick(View view) {
                 Intent ProcessorListViewTest=new Intent(MainActivity.this,TimePickerDemo.class);
+                startActivity(ProcessorListViewTest);
+            }
+        });
+
+        b10=findViewById(R.id.b10);
+        b10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ProcessorListViewTest=new Intent(MainActivity.this,PrpgressBarDemo.class);
                 startActivity(ProcessorListViewTest);
             }
         });

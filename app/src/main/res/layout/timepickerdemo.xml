@@ -15,12 +15,54 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:gravity="center"
-        android:id="@+id/TimePickerDemo1">
+        android:id="@+id/TextTp1">
     </TextView>
 
     <TimePicker
         android:layout_width="wrap_content"
-        android:layout_below="@id/TimePickerDemo1"
+        android:layout_below="@id/TextTp1"
+        android:id="@+id/TimepickerDemo1"
+        android:timePickerMode="clock"
         android:layout_height="wrap_content">
     </TimePicker>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll1"
+        android:layout_below="@id/TimepickerDemo1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Time : "
+            android:paddingLeft="12dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:id="@+id/YourTimeText">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/YourTimeText"
+            android:id="@+id/YourTime"
+            android:inputType="date">
+        </EditText>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/ll1"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click ❤"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnClick"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:gravity="center">
+        </Button>
+    </RelativeLayout>
 </RelativeLayout>
