@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class PrpgressBarDemo extends AppCompatActivity {
 ProgressBar ProgressbarLine,pbg2;
 int pgbStatus=0,pbgSt=0;
-TextView TextPbg;
+TextView TextPbg,TextPbg2;
 Handler handler=new Handler();
 Handler hd=new Handler();
 
@@ -24,6 +24,7 @@ Handler hd=new Handler();
         ProgressbarLine=findViewById(R.id.ProgressBarLine);
         pbg2=findViewById(R.id.pbg2);
         TextPbg=findViewById(R.id.TextPbg);
+        TextPbg2=findViewById(R.id.TextPbg2);
 
         new Thread(new Runnable() {
             @Override
@@ -59,7 +60,7 @@ Handler hd=new Handler();
                         @Override
                         public void run() {
                             pbg2.setProgress(pbgSt);
-//                            TextPbg.setText(pgbStatus+"/"+ ProgressbarLine.getMax());
+                            TextPbg2.setText(pgbStatus+"/"+ ProgressbarLine.getMax());
                         }
                     });
                     try
