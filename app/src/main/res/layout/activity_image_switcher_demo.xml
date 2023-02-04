@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageSwitcherDemo">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="25dp"
+        android:id="@+id/ll1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/HeaderOfIsd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/martel_extralight"
+            android:text="Image switcher demo"
+            android:textStyle="bold"
+            android:textColor="#151212"
+            android:textSize="25dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ImageSwitcher
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/whitepage"
+        android:id="@+id/imgSw1"
+        android:layout_below="@id/ll1">
+    </ImageSwitcher>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:padding="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/imgSw1"
+        android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPre1"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:text="Previous">
+            </Button>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp">
+            </Space>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#8C6075"
+                android:textColor="@color/white"
+                android:id="@+id/btnNext1"
+                android:text="Next">
+            </Button>
+    </LinearLayout>
+</RelativeLayout>
