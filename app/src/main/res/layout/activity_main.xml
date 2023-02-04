@@ -141,4 +141,16 @@
         android:textColor="#D1C1C1">
     </Button>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b10"
+        android:id="@+id/b11"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:text="Scroll View Demo "
+        android:textSize="16dp"
+        android:backgroundTint="#3D1FAA"
+        android:textColor="#FFF2F2">
+    </Button>
 </RelativeLayout>
