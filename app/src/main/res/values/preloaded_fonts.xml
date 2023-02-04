@@ -2,5 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/exo_2</item>
+        <item>@font/felipa</item>
+        <item>@font/martel_extralight</item>
     </array>
 </resources>

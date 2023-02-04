@@ -6,24 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="⭐ Activity Demo ⭐"
-        android:textSize="22dp"
-        android:id="@+id/text1"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:padding="8dp">
-    </TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/ll1"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⭐ Activity Demo ⭐"
+            android:textSize="22dp"
+            android:fontFamily="@font/martel_extralight"
+            android:id="@+id/text1"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:padding="8dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/ll1"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text1"
         android:id="@+id/b1"
         android:onClick="onClick"
-        android:layout_centerHorizontal="true"
         android:text="Custom CheckBox"
         android:textSize="16dp"
         android:backgroundTint="@color/black"
@@ -35,7 +52,6 @@
         android:layout_below="@id/b1"
         android:id="@+id/b2"
         android:onClick="onClick"
-        android:layout_centerHorizontal="true"
         android:text="Custom radio button"
         android:textSize="16dp"
         android:backgroundTint="#00B6FF"
@@ -47,7 +63,6 @@
         android:layout_below="@id/b2"
         android:id="@+id/b3"
         android:onClick="onClick"
-        android:layout_centerHorizontal="true"
         android:text="Spinner Demo"
         android:textSize="16dp"
         android:backgroundTint="#F407E9"
@@ -59,7 +74,6 @@
         android:layout_below="@id/b3"
         android:id="@+id/b4"
         android:onClick="onClick"
-        android:layout_centerHorizontal="true"
         android:text="Implicit Intent"
         android:textSize="16dp"
         android:backgroundTint="#FA4B82"
@@ -71,7 +85,6 @@
         android:layout_below="@id/b4"
         android:id="@+id/b5"
         android:onClick="onClick"
-        android:layout_centerHorizontal="true"
         android:text="Explicit Intent"
         android:textSize="16dp"
         android:backgroundTint="#CA95A6"
@@ -83,7 +96,6 @@
         android:layout_below="@id/b5"
         android:id="@+id/b6"
         android:onClick="onClick"
-        android:layout_centerHorizontal="true"
         android:text="Custom listview / AlertBox"
         android:textSize="16dp"
         android:backgroundTint="#FFE8EF"
@@ -95,7 +107,6 @@
         android:layout_below="@id/b6"
         android:id="@+id/b7"
         android:onClick="onClick"
-        android:layout_centerHorizontal="true"
         android:text="Processor ListView"
         android:textSize="16dp"
         android:backgroundTint="#39F12C"
@@ -108,7 +119,6 @@
         android:layout_below="@id/b7"
         android:id="@+id/b8"
         android:onClick="onClick"
-        android:layout_centerHorizontal="true"
         android:text=" Date-PickerDemo "
         android:textSize="16dp"
         android:backgroundTint="#E687F6"
@@ -121,7 +131,6 @@
         android:layout_below="@id/b8"
         android:id="@+id/b9"
         android:onClick="onClick"
-        android:layout_centerHorizontal="true"
         android:text="Time-PickerDemo "
         android:textSize="16dp"
         android:backgroundTint="#190C1B"
@@ -134,7 +143,6 @@
         android:layout_below="@id/b9"
         android:id="@+id/b10"
         android:onClick="onClick"
-        android:layout_centerHorizontal="true"
         android:text="Progress Bar Demo "
         android:textSize="16dp"
         android:backgroundTint="#5F3266"
@@ -147,10 +155,36 @@
         android:layout_below="@id/b10"
         android:id="@+id/b11"
         android:onClick="onClick"
-        android:layout_centerHorizontal="true"
         android:text="Scroll View Demo "
         android:textSize="16dp"
         android:backgroundTint="#3D1FAA"
         android:textColor="#FFF2F2">
     </Button>
-</RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b11"
+        android:id="@+id/b12"
+        android:onClick="onClick"
+        android:text="Auto_Complete Text Demo "
+        android:textSize="16dp"
+        android:backgroundTint="#B3ABD3"
+        android:textColor="#291313">
+    </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b12"
+            android:id="@+id/b13"
+            android:onClick="onClick"
+            android:text="Edtxt With Watcher "
+            android:textSize="16dp"
+            android:backgroundTint="#000000"
+            android:textColor="#9CFFFFFF">
+        </Button>
+
+    </LinearLayout>
+        </ScrollView>
+            </RelativeLayout>

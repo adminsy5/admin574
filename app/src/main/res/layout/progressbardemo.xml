@@ -39,14 +39,14 @@
     </ProgressBar>
 
     <ProgressBar
+        android:id="@+id/pbg2"
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="250sp"
         android:layout_height="wrap_content"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:progressDrawable="@drawable/custpbg1"
+        android:layout_centerInParent="true"
         android:max="100"
         android:progress="1"
-        android:id="@+id/pbg2"
-        android:layout_centerInParent="true">
+        android:progressDrawable="@drawable/custpbg1">
     </ProgressBar>
 
     <TextView

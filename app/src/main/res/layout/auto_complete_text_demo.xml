@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AutoCompleteTextDemo">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="29dp"
+        android:id="@+id/ll1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/HeaderOfActd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/felipa"
+            android:text="AutoComplete Text Demo"
+            android:textColor="#BA5D5D"
+            android:textSize="25dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/ll1"
+        android:padding="8dp"
+        android:id="@+id/lx1"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Fname : "
+        android:id="@+id/TextFName"
+        android:textColor="@android:color/black"
+        android:textSize="22dp"
+        android:paddingLeft="10dp">
+    </TextView>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:id="@+id/AutoFname"
+            android:paddingStart="6dp"
+            android:background="@drawable/cust_edittext3"
+            android:layout_height="wrap_content">
+        </AutoCompleteTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/lx3"
+        android:id="@+id/lx2"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role : "
+            android:id="@+id/TextRole"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:paddingLeft="140dp">
+        </TextView>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:id="@+id/AutoRole"
+            android:paddingStart="6dp"
+            android:background="@drawable/cust_editext1"
+            android:layout_height="wrap_content">
+        </AutoCompleteTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/lx1"
+        android:padding="8dp"
+        android:id="@+id/lx3"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Lname : "
+            android:id="@+id/TextLName"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:paddingLeft="10dp">
+        </TextView>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:id="@+id/AutoLname"
+            android:paddingStart="6dp"
+            android:background="@drawable/cust_edittext2"
+            android:layout_height="wrap_content">
+        </AutoCompleteTextView>
+    </LinearLayout>
+
+</RelativeLayout>

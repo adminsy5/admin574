@@ -1,17 +1,14 @@
 package com.msfpiyush.admin574;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ProgressBar;
-import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11;
+Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,8 +77,8 @@ Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11;
         b8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ProcessorListViewTest=new Intent(MainActivity.this,CalendarViewDemo.class);
-                startActivity(ProcessorListViewTest);
+                Intent CalendarViewTest=new Intent(MainActivity.this,CalendarViewDemo.class);
+                startActivity(CalendarViewTest);
             }
         });
 
@@ -89,8 +86,8 @@ Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11;
         b9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ProcessorListViewTest=new Intent(MainActivity.this,TimePickerDemo.class);
-                startActivity(ProcessorListViewTest);
+                Intent TimepickerTest=new Intent(MainActivity.this,TimePickerDemo.class);
+                startActivity(TimepickerTest);
             }
         });
 
@@ -98,8 +95,8 @@ Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11;
         b10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ProcessorListViewTest=new Intent(MainActivity.this,PrpgressBarDemo.class);
-                startActivity(ProcessorListViewTest);
+                Intent Progressbartest=new Intent(MainActivity.this,PrpgressBarDemo.class);
+                startActivity(Progressbartest);
             }
         });
 
@@ -107,8 +104,26 @@ Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11;
         b11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ProcessorListViewTest=new Intent(MainActivity.this,ScrollViewDemo.class);
-                startActivity(ProcessorListViewTest);
+                Intent ScrollViewtest=new Intent(MainActivity.this,ScrollViewDemo.class);
+                startActivity(ScrollViewtest);
+            }
+        });
+
+        b12=findViewById(R.id.b12);
+        b12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent AutoTexttest=new Intent(MainActivity.this, AutoCompleteTextDemo.class);
+                startActivity(AutoTexttest);
+            }
+        });
+
+        b13=findViewById(R.id.b13);
+        b13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent WatcherTest=new Intent(MainActivity.this, EditTextWithWatcher.class);
+                startActivity(WatcherTest);
             }
         });
     }
