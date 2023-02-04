@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13;
+Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -124,6 +124,15 @@ Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13;
             public void onClick(View view) {
                 Intent WatcherTest=new Intent(MainActivity.this, EditTextWithWatcher.class);
                 startActivity(WatcherTest);
+            }
+        });
+
+        b14=findViewById(R.id.b14);
+        b14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Sliderdemo=new Intent(MainActivity.this, ImagesliderDemo.class);
+                startActivity(Sliderdemo);
             }
         });
     }
