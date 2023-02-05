@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RajatFrag">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/rajat_frag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:civ_border_width="2dp"
+        android:id="@+id/iconAjay"
+        app:civ_border_color="@color/red">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/AjayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconAjay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/new_rocker"
+        android:text="RAJAT KEVAT ( ADMIN 3 )"
+        android:textColor="@color/red"
+        android:textSize="25sp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/AjayName"
+        android:id="@+id/ll2"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Div : "
+            android:textSize="20sp"
+            android:fontFamily="@font/martel_extralight"
+            android:textColor="@color/red"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=" 5 "
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            android:fontFamily="@font/martel_extralight"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/ll2"
+        android:id="@+id/ll3"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Rno : "
+            android:textSize="20sp"
+            android:fontFamily="@font/martel_extralight"
+            android:textColor="@color/red"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=" 573 "
+            android:textSize="20sp"
+            android:fontFamily="@font/martel_extralight"
+            android:textColor="@color/red"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/ll3"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/whatsapp">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=" 93279 98218 "
+            android:textSize="20sp"
+            android:fontFamily="@font/martel_extralight"
+            android:textColor="@color/red"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

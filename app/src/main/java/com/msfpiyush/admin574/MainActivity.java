@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16;
+Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -151,6 +151,15 @@ Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16;
             public void onClick(View view) {
                 Intent SearchDemo=new Intent(MainActivity.this, SearchViewDemo.class);
                 startActivity(SearchDemo);
+            }
+        });
+
+        b17=findViewById(R.id.b17);
+        b17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Tabdemo=new Intent(MainActivity.this, TabLayoutDemo.class);
+                startActivity(Tabdemo);
             }
         });
     }
