@@ -209,6 +209,18 @@
             android:textColor="#9CFFFFFF">
         </Button>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b15"
+            android:id="@+id/b16"
+            android:onClick="onClick"
+            android:text="SearchView Demo "
+            android:textSize="16dp"
+            android:backgroundTint="#C1E8D3"
+            android:textColor="#9C756FFA">
+        </Button>
+
     </LinearLayout>
         </ScrollView>
             </RelativeLayout>

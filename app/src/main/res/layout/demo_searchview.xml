@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchViewDemo">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="29dp"
+        android:id="@+id/ll1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/HeaderOfSearchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/martel_extralight"
+            android:text="Search View Demo"
+            android:textStyle="bold"
+            android:textColor="#A90EAE"
+            android:textSize="25dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/ll1"
+        android:id="@+id/llx"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="380dp"
+            android:id="@+id/sv1"
+            android:background="@drawable/cust_edittext4"
+            app:iconifiedByDefault="true"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.SearchView>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@id/llx"
+        android:layout_width="wrap_content"
+        android:divider="#FA7DEE"
+        android:dividerHeight="2dp"
+        android:id="@+id/lst1"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>
