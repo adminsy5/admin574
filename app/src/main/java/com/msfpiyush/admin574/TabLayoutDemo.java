@@ -1,11 +1,20 @@
 package com.msfpiyush.admin574;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.FrameLayout;
+import android.widget.Toolbar;
+
 import com.google.android.material.tabs.TabLayout;
 
 public class TabLayoutDemo extends AppCompatActivity {
@@ -18,6 +27,13 @@ TabLayout TabLayout1;
         setContentView(R.layout.demo_tablayout);
         FrameLayout1=findViewById(R.id.FrameLayout1);
         TabLayout1=findViewById(R.id.TabLayout1);
+
+        if (Build.VERSION.SDK_INT >= 24) {
+            Window window = this.getWindow();
+//            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+//            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.setStatusBarColor(this.getResources().getColor(R.color.black));
+        }
 
         TabLayout.Tab Ajith=TabLayout1.newTab();
         Ajith.setText("💜");
@@ -86,5 +102,10 @@ TabLayout TabLayout1;
 
             }
         });
+
+        ActionBar actionBar=getSupportActionBar();
+        ColorDrawable colorDrawable=new ColorDrawable(Color.parseColor("#000000"));
+        actionBar.setBackgroundDrawable(colorDrawable);
+        actionBar.setTitle(" Admin Team 🔥 ");
     }
 }
